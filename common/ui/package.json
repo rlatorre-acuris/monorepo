@@ -1,0 +1,28 @@
+{
+  "name": "@rlatorre/ui",
+  "version": "1.0.0",
+  "private": true,
+  "module": "build/ui.bundle.min.es.js",
+  "main": "build/ui.bundle.min.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build-watch": "webpack --config webpack.prod.js --watch",
+    "compile": "babel src --out-dir lib"
+  },
+  "files": [
+    "build",
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
